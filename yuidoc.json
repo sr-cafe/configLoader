@@ -1,0 +1,11 @@
+{
+	"name": "ConfigLoader",
+	"description": "Utility to load a configuration file with environment dependent properties.",
+	"version": "1.0.0",
+	"options": {
+		"linkNatives": "true",
+		"outdir": "./doc",
+		"syntaxtype": "coffee",
+		"extension": ".coffee"
+	}
+}

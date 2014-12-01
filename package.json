@@ -1,0 +1,38 @@
+{
+  "name": "configLoader",
+  "version": "1.0.0",
+  "description": "Utility to load a configuration file with environment dependent properties.",
+  "main": "index.js",
+  "scripts": {
+    "lint": "coffeelint ./lib/*.coffee",
+    "test": "npm run lint && jasmine-node --coffee --verbose spec",
+    "doc": "yuidoc ./lib"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sr-cafe/configLoader.git"
+  },
+  "keywords": [
+    "config",
+    "coffeescript"
+  ],
+  "author": "Jose Rubio <jose.rubio@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sr-cafe/configLoader/issues"
+  },
+  "homepage": "https://github.com/sr-cafe/configLoader",
+  "dependencies": {
+    "coffee-script": "^1.8.0",
+    "coffeeson": "^0.1.0",
+    "deep-extend": "^0.3.2",
+    "q": "^1.1.2",
+    "ramda": "^0.8.0",
+    "yamljs": "^0.2.1"
+  },
+  "devDependencies": {
+    "coffeelint": "^1.6.1",
+    "jasmine-node": "^1.14.5",
+    "yuidocjs": "^0.4.0"
+  }
+}

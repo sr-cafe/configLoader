@@ -1,0 +1,12 @@
+{
+	"environments":{
+		"dev":{
+			"domain": "localhost.dev",
+			"port": "3000"
+		},
+		"qa":{
+			"domain": "domain.qa",
+			"port": "80"
+		}
+	}
+}
