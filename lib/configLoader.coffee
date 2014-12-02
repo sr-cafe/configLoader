@@ -21,7 +21,7 @@ extend = require 'deep-extend'
 # @type String
 # @private
 ###
-fileEncoding = 'utf-8'
+fileEncoding = 'utf8'
 
 ###*
 # Default value for root key for environment dependent data on the config file.
@@ -54,7 +54,7 @@ destEnvironmentsKey = 'ENV'
 loadFile = (filePath) ->
 	deferred = Q.defer()
 
-	fs.readFile filePath, fileEncoding, (err, file) ->
+	fs.readFile filePath, {encoding: fileEncoding}, (err, file) ->
 		if err
 			deferred.reject err
 		else
